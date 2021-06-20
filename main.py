@@ -54,6 +54,11 @@ async def clear(ctx, amount=1):
     else:   
        await ctx.channel.purge(limit=amount + 1)     
 
+#LOVE
+@client.command()
+async def love(ctx,*,arg):
+    await ctx.send(f"The love between <@{ctx.author.id}> and {arg} is {random.randint(0,100)}%")    
+    
 # SERVER
 @client.command()
 async def server(ctx):
